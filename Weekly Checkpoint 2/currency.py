@@ -1,9 +1,13 @@
-def main()
-    p = float(input("What do you have left in pesos? "))
-    s = float(input("What do you have left in soles? "))
-    r = float(input("What do you have left in reais? "))
+def main():
+    pesos = float(input("What do you have left in pesos? "))
+    soles = float(input("What do you have left in soles? "))
+    reais = float(input("What do you have left in reais? "))
 
-    usd = ((p / 0.00032) + (s / 0.30) + (r / 0.19)50)
-    
-        if __name__=="__main__":
+    usd = (pesos * 0.00032) + (soles * 0.30) + (reais * 0.19)
+    mxn = round(usd * 17.07, 2)
+
+    print(f"USD: {round(usd, 2)}")
+    print(f"MXN: {mxn}")
+
+if __name__=="__main__":
     main()
