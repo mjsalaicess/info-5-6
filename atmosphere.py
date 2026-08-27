@@ -1,5 +1,5 @@
 def main():
-    atmosphere = input("Descent atmosphere layer:")
+    atmosphere = input("Descent atmosphere layer:").strip().title()
     if atmosphere == "Exosphere":
         print("Your altitude level will be betweeen 700 and 10,000 km")
     elif atmosphere == "Thermosphere":
@@ -12,6 +12,9 @@ def main():
         print("Your altitude level will be betweeen 0 and 10 km")
     else:
         print("Invalid. Try again.")
+
+    start = float(input("Enter exact altitude:"))
+
 
 
 
