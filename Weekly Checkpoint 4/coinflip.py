@@ -1,11 +1,20 @@
 import random
 def main():
-    flip = random.randint(1, 2)
+    coin = ["heads","tails"]
+    attempts = 3
+    while attempts > 0:
+        flip = random.choice(coin)
+        guess = input("Heads or tails?:").strip().lower()
 
-    if flip == 1:
-        print("Heads")
-    elif flip == 2:
-        print("Tales")
+        print("The coin laned on", flip)
+
+        if guess == flip:
+            print("Winner")
+            break
+        else:
+            print("Loser")
+            attempts -= 1
+            print("Attempts left:", attempts)
 
 if __name__=="__main__":
     main()
