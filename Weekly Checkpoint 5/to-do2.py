@@ -8,9 +8,10 @@ def main():
         if new_task == "Exit":
             break
         elif new_task not in tasks:
-            tasks.append(new_task)
+            tasks.insert(0, new_task)
         elif new_task in tasks:
             tasks.remove(new_task)
-            print("Task removed from the list.")
+            print("Task removed from the list")
+            
 if __name__=="__main__":
     main()
