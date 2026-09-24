@@ -1,0 +1,3 @@
+While: is and indefinate loop, you stilld ont know how many times youll run the code.
+For: Also an indefinate loop, but this one is used when we know how many times we are repeating that same loop, becasue it goes in a sequence.
+Compare: We can use a fro loop inside a while loop. We know how many times its repeating the code, but in the while loop we dont. 
