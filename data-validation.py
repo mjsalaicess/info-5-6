@@ -3,13 +3,20 @@ def main():
 
     while not_validated:
         try:
-            int(input("Enter a number between 1 and 10: "))
-            not_validated = False
+            number = int(input("Enter a number between 1 and 10: "))
+            if number >= 1 and number <= 10:
+                print ("Success!")
+                not_validated = False
+            else:
+                print("Error")
         except ValueError:
              print("You must enter a number between 1 and 10.")
-        if not_validated == range(1,11):
-            print("Number out of range")
 
+    name_validation = True
+    while name_validation:
+        try:
+            name = input("Enter a name:")
+            print(name[0])
 
 if __name__=="__main__":
     main()
