@@ -4,7 +4,7 @@ def main():
     while not_validated:
         try:
             number = int(input("Enter a number between 1 and 10: "))
-            if number >= 1 and number <= 10:
+            if 1 <= number <=10:
                 print ("Success!")
                 not_validated = False
             else:
@@ -12,11 +12,15 @@ def main():
         except ValueError:
              print("You must enter a number between 1 and 10.")
 
-    name_validation = True
-    while name_validation:
+
+    while True:
         try:
             name = input("Enter a name:")
-            print(name[0])
+            f_letter= name[0]
+            print("Name stored successfully")
+            break
+        except IndexError:
+            print("You MUST enter a name")
 
 if __name__=="__main__":
     main()
