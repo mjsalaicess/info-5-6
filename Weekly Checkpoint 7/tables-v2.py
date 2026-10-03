@@ -1,24 +1,26 @@
 def main():
-    valid_num = []
-    for i in range (1,11):
-        valid_num.append (str(i))
+    print("Welcome to the Times Table Quiz!")
+
     while True:
-        print("Welcome to a times table quiz")
-        times_table = input("Enter a times table that you would like to be tested on: ")
-        break
-        
+        times_table = int(input("Enter a times table that you would like to be tested on (1-10): "))
 
-    if times_table in valid_num:
-        max_value = int(input("Enter maximun value for the times table: "))
-        print("Here is your quiz in the {times_table} times table")
-        for x in range(1,max_value +1):
-            answer = x * int(times_table)
-            print(f"{times_table} x {x}")
-            user_answer = int(input("Type an answer: "))
-            if user_answer == answer:
-                print("Correct!")
-            else:
-                print("Incorrect")
+        if 1 <= times_table <= 10:
+            max_value = int(input("Enter maximum value for the times table: "))
 
-if __name__=="__main__":
+            print(f"Here is the {times_table} times table")
+
+            for x in range(1, max_value +1):
+                answer = x * times_table
+                user_answer = int(input(f"{x} times {times_table} is: "))
+
+                if user_answer == answer:
+                    print("Correct!")
+
+                elif user_answer != answer:
+                    print("Incorrect :(")
+            break
+        else:
+            print("Invalid command.")
+
+if __name__ == "__main__":
     main()
