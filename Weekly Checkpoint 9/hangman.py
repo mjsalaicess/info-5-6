@@ -1,10 +1,22 @@
+import random
 def main():
-    start_game("words.txt")
+    start_game("random_words.txt")
 
 def start_game(file):
-    word_list = []
-    with open(file) as number_file:
-        for 
+    with open(file) as random_word:
+        content = random_word.read().splitlines()
+        secret_v = random.choice(content)
+    print(secret_w)
+
+if __name__=="__main__":
+    main()
+
+
+
+
+
+
+
 #Define main function
 #Create txt file that contains random words
 #Define a start_game function with 1 parameter
