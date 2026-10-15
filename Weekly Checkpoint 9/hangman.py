@@ -15,7 +15,7 @@ def start_game(file):
         print(" ".join(hint))
 
         while True:
-            guess = input("Take a guess: ").lower
+            guess = input("Take a guess: ")
             if len(guess) == 1:
                 break
             else:
