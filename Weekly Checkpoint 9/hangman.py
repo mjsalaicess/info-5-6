@@ -54,17 +54,31 @@ if __name__=="__main__":
 
 
 
+
+
+
 #Define main function
+#Welcome the user to the hangman game
 #Create txt file that contains random words
+#Make sure the txt file has all lower case words
+#Make sure theres more than 1 word in the txt file
+#Make sure the words are appropriate
+#Make sure to have Christlike attributes while playing the game
 #Define a start_game function with 1 parameter
 #Open the txt file in our start_game function
+#Create a while loop
 #Convert our txt file into a list
 #Ask the program to choose one of the random words
 #Add a limit of tries
 #Create an if if they get it right or wrong
 #Do the same wit elif
 #Do the same with else
-
 #Start asking the user for their guesses
+#Replace the number of letters for dashes
+#Make the program output the wrong letters
+#Make the program let you know when you guessed wrong
+#Congratulate the user when they guess the word
+#Let the user know when they run out of attempts and print the secret word (they lost)
+
 
 
